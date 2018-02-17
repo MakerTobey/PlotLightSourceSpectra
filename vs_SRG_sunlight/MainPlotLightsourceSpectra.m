@@ -6,22 +6,11 @@
 load AbsSpectra.mat
 LightSourcePercentageIndex = [0 2 3 5 7 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100];
 
-
-%% load variables and converstions to plot against sun, absoption, etc
-% addpath('C:\Users\tw347\ownCloud\docs\Science\Electromicrobiology\Model Efficiency\subroutines');
-% addpath('C:\Users\tw347\ownCloud\docs\Science\Electromicrobiology\Model Efficiency');
-
-% global FontSize
-% FontSize = 16;
 t = (0:(1/60):24)'; % time in h
-% L = 1:500; % nr. layers
 t2 = t*3600; % time for integrations over seconds instead of hours
 
 load WorldAv %load the array with sun spectrum data
 load XValuesSpectrum %... and corresponding wavelength values
-
-% load workspace7.mat
-% SetConstants %run the script
 
 
 %% plot measured 100% spectrum against sun spectrum at 1 sun and at world average
